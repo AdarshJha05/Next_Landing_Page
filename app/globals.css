@@ -25,4 +25,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===========================
+   HIDE SCROLLBAR COMPLETELY
+   =========================== */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Smooth scrolling behavior */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Prevent page-level horizontal scroll */
+html, body {
+  overflow-x: hidden !important;
+}
+
 
